@@ -4,7 +4,7 @@ const App = () => {
     // @ts-ignore
   return (
         <div>
-          App
+          Hello
         </div>
     );
 };
