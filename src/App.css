@@ -1,38 +1,70 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-box {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  height: 400px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+  border-radius: 5px; /* Округляем углы */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-form{
+  width: 51.5%;
+  margin: 5px auto 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  resize: none;
+  height: 22px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #ccc;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #333;
+}
+.user-message{
+  display: flex;
+  justify-content: flex-start;
+}
+.user-message p{
+  padding: 5px 8px;
+  background: #e8e7e7;
+  border-radius: 7px;
+}
+.system-message{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2px;
+}
+.system-message p{
+  padding: 5px 8px;
+  background: rgba(101, 173, 182, 0.98);
+  border-radius: 7px;
+  color: #FFFFFF;
 }
